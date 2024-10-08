@@ -1,0 +1,421 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+
+<link href="~/Content/CSS/Product_Detail.css" />
+
+
+<script language="javascript">
+        const productPrice = 929000; // Giá sản phẩm
+
+        function changeQuantity(amount) {
+            const quantityInput = document.getElementById('quantityInput');
+            let currentQuantity = parseInt(quantityInput.value);
+            currentQuantity += amount;
+
+            // Đảm bảo số lượng không nhỏ hơn 1
+            if (currentQuantity < 1) {
+                currentQuantity = 1;
+            }
+
+            quantityInput.value = currentQuantity;
+            updateTotal();
+        }
+
+        function updateTotal() {
+            const quantity = parseInt(document.getElementById('quantityInput').value);
+            const total = quantity * productPrice;
+
+            // Cập nhật giá tạm tính
+            document.getElementById('totalPrice').innerHTML = `
+            <div>${total.toLocaleString('vi-VN')}
+            <sup>₫</sup></div>`;
+        }
+
+        // Khởi tạo tổng khi trang được tải
+        updateTotal();
+</script>
+
+
+
+<!-- Begin Content -->
+    <div class="BreadCum">
+        <div class="container">
+            <div class="Information_About_BreadCum">
+                <div class="Flex_Items_BreadCum">
+                    <a class="Items_BreadCum">
+                        Trang chủ
+                    </a>
+
+                    <span class="Leading">/</span>
+
+
+
+                    <a class="Items_BreadCum">
+                        Đồ chơi
+                    </a>
+
+                    <span class="Leading">/</span>
+
+
+
+
+                    <a class="Items_BreadCum">
+                        Mẹ và Bé
+                    </a>
+                    <span class="Leading">/</span>
+
+
+
+
+
+                    <a class="Items_BreadCum">
+                        Dinh dưỡng cho người lớn
+                    </a>
+                    <span class="Leading">/</span>
+
+
+
+                    <a class="Items_BreadCum">
+                        sữa bột chức năng người lớn
+                    </a>
+                    <span class="Leading">/</span>
+
+
+
+                    <a class="Items_BreadCum">
+                        Lon sữa Glucerna 800G - Tặng 1 hộp đựng thức ăn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="Product_Content">
+        <div class="container">
+            <div class="Inside_Items_Content">
+                <div class="Flex_Items_Content">
+                    <div class="RightItems_Content">
+                        <div class="Img_Items">
+                            <div class="Img_Frame">
+                                <div style="height: 368px; width: 368px;">
+                                    <div style="position: relative; cursor: pointer;">
+                                        <img src="~/Content/img/Product_Items1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Block"></div>
+
+                            <div class="Thumbnails_Img">
+                                <div class="Thumnails_IMG_Items">
+                                    <div class="Content_Thumbnails">
+                                        <span class="Slider_Thumbnails">
+                                            <a href="" class="Items_Thumnails_Slider">
+                                                <img src="~/Content/img/Product_Items1.png" class="Img_Items_Slider_Thumnabnails">
+                                            </a>
+
+
+                                            <a href="" class="Items_Thumnails_Slider">
+                                                <img src="~/Content/img/Product_Items2.png" class="Img_Items_Slider_Thumnabnails">
+                                            </a>
+
+
+                                            <a href="" class="Items_Thumnails_Slider">
+                                                <img src="~/Content/img/Product_Items3.png" class="Img_Items_Slider_Thumnabnails">
+                                            </a>
+
+
+                                            <a href="" class="Items_Thumnails_Slider">
+                                                <img src="~/Content/img/Product_Items4.png" class="Img_Items_Slider_Thumnabnails">
+                                            </a>
+
+
+                                            <a href="" class="Items_Thumnails_Slider">
+                                                <img src="~/Content/img/Product_Items5.png" class="Img_Items_Slider_Thumnabnails">
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="More_Product">
+                                <div class="Icon_Text_MoreProduct">
+                                    <img src="~/Content/img/icon_MoreProduct.png" style="width: 24px;height: 24px;">
+                                    <div class="Text">
+                                        <span style="color: #808089;">Xem thêm</span>
+                                        Ưu điểm & lưu ý của sản phẩm
+                                    </div>
+                                </div>
+
+                                <div class="Icon_Countinue">
+                                    <img src="~/Content/img/Icon_Right.png" style="height: 24px; width: 24px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MiddleItems_Content">
+                        <div class="Details_Items">
+                            <div class="Inside_Details_Items">
+                                <div class="Items_Content Top">
+                                    <div class="Inside_Top_Items">
+                                        <div class="Header_Top_Items">
+                                            <div class="Logo_Approve">
+                                                <img src="~/Content/img/RealProduct.png" alt="" style="width: 89px; height: 20px;">
+                                                <img src="~/Content/img/ReFund.png" alt="" style="width: 114px; height: 20px;">
+                                                <img src="~/Content/img/Top_Deal.png" alt="" style="width: 76px; height: 20px;">
+                                                <span class="brand">
+                                                    <h6>Thương hiệu</h6>
+                                                    <a href="#">Glucerna</a>
+                                                </span>
+                                            </div>
+
+                                            <h1 class="Title_Top_Items">Lon Sữa Glucerna 800g - Tặng 1 hộp đựng thức ăn</h1>
+
+
+                                            <div class="Rating">
+                                                <div style="display: flex;">
+                                                    <div class="Ratting_Items">
+                                                        <div class="Star_Ratting">5.0</div>
+                                                        <div style="display: flex;">
+                                                            <div style="position: relative;">
+                                                                <div style="display: flex; align-items: center;">
+                                                                    <div class="Star_Rate">
+                                                                        <img src="~/Content/img/Rating_Star.png" alt="" class="Star">
+                                                                        <img src="~/Content/img/Rating_Star.png" alt="" class="Star">
+                                                                        <img src="~/Content/img/Rating_Star.png" alt="" class="Star">
+                                                                        <img src="~/Content/img/Rating_Star.png" alt="" class="Star">
+                                                                        <img src="~/Content/img/Rating_Star.png" alt="" class="Star">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="number">(3)</a>
+
+                                                <div class="Line"></div>
+
+                                                <div class="Count_Sale">Đã Bán 46</div>
+                                            </div>
+
+                                            <div class="From">
+                                                <div class="Items">
+                                                    <span>Made in spain</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="Header_Bottom_Items">
+                                            <div class="Product_Details_Price">
+                                                <div class="Price">
+                                                    <div class="Product_Price_After_Disscount">
+                                                        929.000
+                                                        <sup>₫</sup>
+                                                    </div>
+
+                                                    <div class="Discount">
+                                                        -7%
+                                                    </div>
+
+                                                    <div class="Original_Price">
+                                                        <del>996.930</del>
+                                                        <sup>₫</sup>
+                                                    </div>
+
+                                                    <div class="Icon_Info">
+                                                        <img src="~/Content/img/More_Info_Icon.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Items_Content Middle">
+                                    <div class="Middle_Title">
+                                        Thông Tin vận chuyển
+                                    </div>
+
+                                    <div class="Address_Ship">
+                                        <div class="Inside_Address_Ship">
+                                            <div class="Text_Delivery">
+                                                Giao đến Q. 1, P. Bến Nghé, Hồ Chí Minh
+                                            </div>
+
+                                            <span style="color:#0a68ff ;">Đổi</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="SXZ ShipTo">
+                                        <div class="Inside_ShipTo">
+                                            <div class="Shipping_Into">
+                                                <div class="Shipping_Into_Header">
+                                                    <div class="Logo">
+                                                        <img src="~/Content/img/Logo_Shipping_Into_Now.png" style="width: 32px; height: 16px;" alt="">
+                                                    </div>
+
+                                                    <div class="Text">
+                                                        Giao siêu tốc 24h
+                                                    </div>
+                                                </div>
+
+                                                <div class="Under_Header_Shipping_Into">
+                                                    <div class="Free_Shipp">
+                                                        <span style="color:#27272A;">
+                                                            Trước 19h hôm nay
+                                                            <span style="color:#00AB56;;">Miễn phí</span>
+                                                            <span style="color:#808089; ;">
+                                                                <del>
+                                                                    25.000
+                                                                    <sup><small>₫</small></sup>
+                                                                </del>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="Shipping_Into">
+                                                <div class="Shipping_Into_Header">
+                                                    <div class="Logo">
+                                                        <img src="~/Content/img/Shipp_Untill.png" style="width: 32px; height: 16px;" alt="">
+                                                    </div>
+
+                                                    <div class="Text">
+                                                        Giao đúng sáng mai
+                                                    </div>
+                                                </div>
+
+                                                <div class="Under_Header_Shipping_Into">
+                                                    <div class="Free_Shipp">
+                                                        <span style="color:#27272A;">
+                                                            8h - 12h, 08/10:
+                                                            <span style="color:#00AB56;;">Miễn phí</span>
+                                                            <span style="color:#808089; ;">
+                                                                <del>
+                                                                    19.600
+                                                                    <sup><small>₫</small></sup>
+                                                                </del>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="SXZ Delivery_Price">
+                                        <div class="Inside_Delivery_Price">
+                                            <div>
+                                                <img src="~/Content/img/FreeShipTruck.png" style="width: 18px; height: 18px;" alt="">
+                                                <div class="Text">Freeship 10k đơn từ 45k, Freeship 25k đơn từ 100k</div>
+                                                <img src="~/Content/img/More_Info_Icon.png" class="Icon_Info" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="Items_Content Bottom">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Right_Items_Content">
+                        <div class="Full_Body_Content_Right">
+                            <div class="bufoOo Main_Left_Content">
+                                <div class="bfJGpi Top_Left_Content">
+                                    <div class="Left">
+                                        <a>
+                                            <img src="~/Content/img/Block_Tiki_Logo.png" style="width: 40px; height: 40px;">
+                                        </a>
+
+                                        <div class="Text">
+                                            <span>
+                                                <div class="myqYs Text_Inside">
+                                                    <a href="#">
+                                                        <span>Tiki Trading</span>
+                                                    </a>
+                                                </div>
+                                            </span>
+
+                                            <div class="Under_Text">
+                                                <div class="item">
+                                                    <img src="~/Content/img/OfficeIcon.png" style="width: 72px; height: 20px;">
+                                                </div>
+
+                                                <div class="item Rating">
+                                                    <div class="title">
+                                                        <span class="spanDecor">4.7</span>
+                                                        <img src="~/Content/img/Rating_Star.png" style="width: 16px; height: 16px;">
+                                                    </div>
+
+                                                    <div class="subTitle">(5.5tr+ đánh giá)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <img src="~/Content/img/Icon_Chat.png" style="width: 20px; height: 20px;" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="Header_Left_Content">
+                                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                                        <div class="Quantity">
+                                            <p class="label">Số lượng</p>
+
+                                            <div class="group_Input">
+                                                <button type="button" class="btn_Decrease" onclick="changeQuantity(-1)">-</button>
+                                                <input type="text" class="Input" name="Product_Number" value="1" id="quantityInput" onchange="updateTotal()">
+                                                <button type="button" class="btn_Increase" onclick="changeQuantity(1)">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Money">
+                                        <div class="fcwSuV Text">Tạm tính</div>
+
+                                        <div class="HGbRm Price_BuyingWithCount" id="totalPrice">
+                                            <div>
+                                                929.000
+                                                <sup>₫</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="group_button">
+                                        <button class="gbcanz btn1" type="button">
+                                            <span>Mua ngay</span>
+                                        </button>
+
+
+                                        <button class="jZCrXg btn2" type="button">
+                                            Thêm vào giỏ
+                                        </button>
+
+
+                                        <button class="jZCrXg btn3 " type="button">
+                                            Mua trước trả sau
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Content -->

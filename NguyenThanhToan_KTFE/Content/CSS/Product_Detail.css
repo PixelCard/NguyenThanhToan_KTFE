@@ -1,0 +1,790 @@
+﻿/* Begin Content */
+
+html {
+    font-size: 15px;
+    line-height: 1.6px;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*Phan chung*/
+.container {
+    width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Dlex {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+}
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5rem;
+    left: -0.2rem;
+}
+
+.SXZ {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: rgb(39, 39, 42);
+    gap: 8px;
+}
+
+.bufoOo {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 4px;
+}
+
+.bfJGpi {
+    display: flex;
+    padding-bottom: 12px;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+    justify-content: space-between;
+}
+
+
+.HGbRm {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.myqYs {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgb(36, 36, 36);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.gbcanz {
+    background: rgb(255, 66, 78);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.jZCrXg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    white-space: nowrap;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(10, 104, 255);
+    border: 1px solid rgb(10, 104, 255);
+    border-radius: 4px;
+}
+
+
+.spanDecor {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+
+
+.fcwSuV {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+
+
+
+#Content {
+    background-color: #f5f5fa;
+}
+
+
+
+.Information_About_BreadCum {
+}
+
+    .Information_About_BreadCum .Flex_Items_BreadCum {
+        display: flex;
+        align-items: center;
+    }
+
+.Flex_Items_BreadCum .Items_BreadCum {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 14px;
+    color: #808089;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.Flex_Items_BreadCum > span {
+    margin-left: 5.5px;
+    margin-right: 8.5px;
+}
+
+.Inside_Items_Content {
+}
+
+    .Inside_Items_Content .Flex_Items_Content {
+        display: flex;
+    }
+
+.Flex_Items_Content .RightItems_Content {
+    background-color: #ffff;
+    display: flex;
+    width: 400px;
+    position: sticky;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    top: 12px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.RightItems_Content .Img_Items {
+    padding: 0px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.RightItems_Content .Img_Frame {
+    position: relative;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+}
+
+.Thumbnails_Img {
+    display: flex;
+    height: 54px;
+}
+
+    .Thumbnails_Img .Thumnails_IMG_Items {
+        width: 100%;
+        position: relative;
+    }
+
+.Thumnails_IMG_Items .Content_Thumbnails {
+}
+
+.Content_Thumbnails .Slider_Thumbnails {
+    gap: 8px;
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+    display: inline-flex;
+    min-width: 100%;
+}
+
+.Slider_Thumbnails .Items_Thumnails_Slider {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ebebf0;
+    border-radius: 4px;
+}
+
+.Items_Thumnails_Slider .Img_Items_Slider_Thumnabnails {
+    width: 47px;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 2px;
+}
+
+.More_Product {
+    display: flex;
+    border-top: 2px solid #ebebf0;
+    padding: 12px 4px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .More_Product .Icon_Text_MoreProduct {
+        display: flex;
+        align-items: center;
+    }
+
+.Icon_Text_MoreProduct > img {
+    margin-right: 5px;
+}
+
+.Icon_Text_MoreProduct .Text {
+    color: #27272a;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+
+.Details_Items {
+    display: flex;
+    flex-direction: column;
+}
+
+    .Details_Items .Inside_Details_Items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+.Inside_Details_Items .Items_Content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 70px;
+    gap: 4px;
+}
+
+.Inside_Details_Items .Top {
+    gap: 16px;
+}
+
+
+.Top_Items .Inside_Top_Items {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: rgb(39, 39, 42);
+    gap: 16px;
+}
+
+.Inside_Top_Items .Header_Top_Items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 396px;
+}
+
+.Header_Top_Items .Logo_Approve {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Logo_Approve .brand {
+    display: flex;
+    align-items: baseline;
+}
+
+.brand > h6 {
+    margin: 0px;
+    color: rgb(36, 36, 36);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.brand > a {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(13, 92, 182);
+    margin-left: 7px;
+}
+
+.Header_Top_Items .Title_Top_Items {
+    font-size: 20px;
+    color: #27272a;
+    margin: 0;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.Rating {
+    display: flex;
+    align-items: center;
+}
+
+    .Rating .Ratting_Items {
+        display: flex;
+    }
+
+.Ratting_Items .Star_Ratting {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.Ratting_Items .Star_Rate {
+    width: 100%;
+    top: 3px;
+    position: relative;
+}
+
+
+.Star_Rate .Star {
+    width: 16px;
+    height: 16px;
+}
+
+.Rating .number {
+    display: block;
+    margin-left: 8px;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    line-height: 24px;
+    bottom: 2px;
+    position: relative;
+}
+
+.Rating .Line {
+    width: 1px;
+    height: 12px;
+    background-color: rgb(199, 199, 199);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.Rating .Count_Sale {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(120, 120, 120);
+}
+
+.From {
+    display: flex;
+    flex-direction: row;
+}
+
+    .From .Items {
+        display: flex;
+        font: 12px;
+        color: #808089;
+        gap: 4px;
+        align-items: center;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+
+.Header_Bottom_Items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+    .Header_Bottom_Items .Product_Details_Price {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+.Product_Details_Price .Price {
+    display: flex;
+    align-items: center;
+    color: #27272a;
+    gap: 8px;
+}
+
+.Price .Product_Price_After_Disscount {
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.Price .Discount {
+    background: rgb(245, 245, 250);
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Price .Original_Price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(128, 128, 137);
+    margin-left: 10px;
+}
+
+.Price .Icon_Info > img {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+.Middle .Middle_Title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+
+.Middle .Address_Ship {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: rgb(39, 39, 42);
+    gap: 8px;
+}
+
+.Address_Ship .Inside_Address_Ship {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    min-height: 21px;
+    flex: 1;
+}
+
+.Inside_Address_Ship .Text_Delivery {
+    width: 100%;
+}
+
+
+.ShipTo {
+    border: none;
+}
+
+
+    .ShipTo .Inside_ShipTo {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0%;
+        gap: 8px;
+    }
+
+.Inside_ShipTo .Shipping_Into {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    margin-right: 12px;
+    z-index: 1;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(120, 120, 120);
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+}
+
+.Shipping_Into .Shipping_Into_Header {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.Shipping_Into_Header .Text {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+    margin-left: 8px;
+}
+
+.Under_Header_Shipping_Into .Free_Shipp {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Delivery_Price {
+    border-bottom: none;
+    padding: 4px 0px;
+}
+
+    .Delivery_Price .Inside_Delivery_Price {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+.Inside_Delivery_Price > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.Inside_Delivery_Price .Text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    color: rgb(39, 39, 42);
+    max-width: calc(100% - 24px);
+}
+
+.Inside_Delivery_Price .Icon_Info {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    top: -0.7px;
+    left: 2px;
+}
+
+.Right_Items_Content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.RightItems_Content .Full_Body_Content_Right {
+    position: sticky;
+    top: 12px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Full_Body_Content_Right .Main_Left_Content {
+    gap: 16px;
+    overflow: initial;
+}
+
+.Main_Left_Content .Top_Left_Content {
+    align-items: center;
+    height: 55px;
+    gap: 0;
+}
+
+.Top_Left_Content .Left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 65px;
+}
+
+.Top_Left_Content .Text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.Text_Inside > a {
+    display: flex;
+    flex: 1 1 0%;
+    gap: 4px;
+    align-items: center;
+}
+
+    .Text_Inside > a > span {
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+    }
+
+.Top_Left_Content .Text .Under_Text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Under_Text .item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: #000;
+}
+
+.Under_Text .Rating::before {
+    content: " ";
+    width: 1px;
+    height: 12px;
+    background: rgb(235, 235, 240);
+    display: block;
+    margin-right: 4px;
+}
+
+.Rating .title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Rating .subTitle {
+    color: rgb(128, 128, 137);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Top_Left_Content .right {
+    display: flex;
+    padding: 6px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+    position: relative;
+    left: 8px;
+}
+
+.Header_Left_Content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+    .Header_Left_Content .Quantity {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+.Quantity .label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0px;
+}
+
+.Quantity .group_Input {
+    display: flex;
+    align-items: center;
+}
+
+.group_Input button {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: center;
+    width: 40px;
+}
+
+.group_Input button, .group_Input Input {
+    border: 2px solid #c4c4cf4d;
+    height: 32px;
+    color: rgb(36, 36, 36);
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    background: white;
+}
+
+.group_Input .Input {
+    width: 40px;
+    margin: 0px 6px;
+}
+
+.Header_Left_Content .Money {
+    display: flex;
+    flex-direction: column;
+}
+
+.Money .Price_BuyingWithCount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.group_button .btn1 {
+    width: 320px;
+}
+
+.group_button .btn2 {
+    margin-top: 15px;
+}
+
+.group_button .btn3 {
+    margin-top: 15px;
+}
+/* End Content */
